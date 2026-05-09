@@ -121,6 +121,37 @@ export default function LeadMagnetGate({ resource }) {
                 buttonLabel={`Get the ${format}`}
                 onSubscribe={handleSubscribe}
               />
+              <div className="how-it-works">
+                <p className="how-it-works-title">What happens next</p>
+                <ol className="how-it-works-steps">
+                  <li>
+                    <span className="step-num">1</span>
+                    <span>
+                      Enter your email above — a Substack tab will open in a new
+                      window.
+                    </span>
+                  </li>
+                  <li>
+                    <span className="step-num">2</span>
+                    <span>
+                      Pick any plan to confirm your subscription. The{" "}
+                      <strong>free plan</strong> works — no payment required.
+                      <img
+                        className="how-it-works-img"
+                        src="/assets/tutorial.png"
+                        alt="Substack subscription plan picker — the free 'None' plan on the right works."
+                      />
+                    </span>
+                  </li>
+                  <li>
+                    <span className="step-num">3</span>
+                    <span>
+                      Come back to this tab and your {format} download will be
+                      unlocked.
+                    </span>
+                  </li>
+                </ol>
+              </div>
               <p className="fine-print">
                 Free, weekly-ish, unsubscribe anytime.
               </p>
