@@ -1,8 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Newsletter Landing Page",
-  description: "Join our Substack newsletter",
+  title: "The Customer Continuum — Kevin Lau",
+  description:
+    "Customer-Led Growth playbooks for B2B teams. Practical frameworks on advocacy, lifecycle, and turning customers into your #1 growth engine.",
 };
 
 export default function RootLayout({ children }) {
