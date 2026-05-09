@@ -1,13 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import SubstackEmbed from "./SubstackEmbed";
 
-export default function LeadMagnetGate({
-  resource,
-  searchParams,
-}) {
-  const unlocked = searchParams?.unlocked === "1";
-  const hasError = searchParams?.error === "1";
-  const subscribeStatus = searchParams?.status || null;
-
+export default function LeadMagnetGate({ resource }) {
   const {
     slug,
     eyebrow = "Free resource",
@@ -20,6 +17,28 @@ export default function LeadMagnetGate({
     downloadUrl,
     coverEmoji = "📘",
   } = resource;
+
+  const storageKey = `kevinlau:unlocked:${slug}`;
+  const [unlocked, setUnlocked] = useState(false);
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(storageKey) === "1") {
+        setUnlocked(true);
+      }
+    } catch {
+      // localStorage unavailable; ignore
+    }
+  }, [storageKey]);
+
+  function handleUnlock() {
+    try {
+      window.localStorage.setItem(storageKey, "1");
+    } catch {
+      // ignore
+    }
+    setUnlocked(true);
+  }
 
   return (
     <main className="page">
@@ -71,11 +90,7 @@ export default function LeadMagnetGate({
 
           {unlocked ? (
             <div className="unlocked">
-              <p className="unlocked-tag">
-                {subscribeStatus === "synced"
-                  ? "✅ You're subscribed."
-                  : "✅ Got it — your resource is ready."}
-              </p>
+              <p className="unlocked-tag">✅ Your resource is ready.</p>
               <a
                 className="download-btn"
                 href={downloadUrl}
@@ -91,37 +106,27 @@ export default function LeadMagnetGate({
             </div>
           ) : (
             <>
-              <form
-                className="signup"
-                action="/api/subscribe"
-                method="post"
-              >
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value={`/resources/${slug}`}
-                />
-                <label htmlFor="email" className="visually-hidden">
-                  Work email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="you@workemail.com"
-                  required
-                />
-                <button type="submit">Get the {format}</button>
-              </form>
+              <p className="resource-step">
+                <strong>Step 1.</strong> Subscribe to The Customer Continuum
+                below.
+              </p>
+              <div className="embed-wrap">
+                <SubstackEmbed height={150} />
+              </div>
 
-              {hasError && (
-                <p className="error">
-                  Could not process your request. Please try again.
-                </p>
-              )}
+              <p className="resource-step">
+                <strong>Step 2.</strong> Once you've subscribed, click below to
+                unlock the {format}.
+              </p>
+              <button
+                type="button"
+                className="download-btn"
+                onClick={handleUnlock}
+              >
+                I subscribed — unlock the {format}
+              </button>
 
               <p className="fine-print">
-                Subscribe to The Customer Continuum and unlock this resource.
                 Free, weekly-ish, unsubscribe anytime.
               </p>
             </>

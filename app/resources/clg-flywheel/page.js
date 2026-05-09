@@ -27,7 +27,6 @@ const resource = {
   downloadUrl: "/assets/clg-flywheel.pdf",
 };
 
-export default async function Page({ searchParams }) {
-  const params = await searchParams;
-  return <LeadMagnetGate resource={resource} searchParams={params} />;
+export default function Page() {
+  return <LeadMagnetGate resource={resource} />;
 }
