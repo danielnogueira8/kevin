@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import SubstackEmbed from "./SubstackEmbed";
+import SubscribeForm from "./SubscribeForm";
 
 export default function LeadMagnetGate({ resource }) {
   const {
@@ -31,7 +31,7 @@ export default function LeadMagnetGate({ resource }) {
     }
   }, [storageKey]);
 
-  function handleUnlock() {
+  function handleSubscribe() {
     try {
       window.localStorage.setItem(storageKey, "1");
     } catch {
@@ -106,26 +106,15 @@ export default function LeadMagnetGate({ resource }) {
             </div>
           ) : (
             <>
-              <p className="resource-step">
-                <strong>Step 1.</strong> Subscribe to The Customer Continuum
-                below.
+              <p className="resource-desc">
+                Subscribe to The Customer Continuum to unlock the {format}.
+                You'll get the download here and Kevin's confirmation email in
+                your inbox.
               </p>
-              <div className="embed-wrap">
-                <SubstackEmbed height={150} />
-              </div>
-
-              <p className="resource-step">
-                <strong>Step 2.</strong> Once you've subscribed, click below to
-                unlock the {format}.
-              </p>
-              <button
-                type="button"
-                className="download-btn"
-                onClick={handleUnlock}
-              >
-                I subscribed — unlock the {format}
-              </button>
-
+              <SubscribeForm
+                buttonLabel={`Get the ${format}`}
+                onSubscribe={handleSubscribe}
+              />
               <p className="fine-print">
                 Free, weekly-ish, unsubscribe anytime.
               </p>

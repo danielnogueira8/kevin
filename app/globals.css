@@ -194,6 +194,7 @@ h1 em {
 
 .signup {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   max-width: 480px;
   margin: 0 auto;
@@ -202,6 +203,11 @@ h1 em {
   border: 1px solid var(--border);
   border-radius: 12px;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.signup .error {
+  flex-basis: 100%;
+  margin: 0;
 }
 
 .signup:focus-within {
@@ -400,36 +406,7 @@ h1 em {
   color: var(--border-strong);
 }
 
-.embed-wrap {
-  max-width: 480px;
-  margin: 0 auto;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.embed-wrap iframe {
-  display: block;
-  width: 100%;
-}
-
 /* Lead-magnet gate */
-.resource-step {
-  margin: 24px 0 12px;
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-.resource-step strong {
-  color: var(--accent);
-  font-weight: 700;
-}
-
-.resource .embed-wrap {
-  margin: 0 0 8px;
-  max-width: 100%;
-}
-
-
 .resource {
   position: relative;
   z-index: 1;

@@ -1,6 +1,6 @@
-import SubstackEmbed from "./components/SubstackEmbed";
+import SubscribeForm from "./components/SubscribeForm";
 
-export default async function Home() {
+export default function Home() {
   return (
     <main className="page">
       <div className="bg-grid" aria-hidden="true" />
@@ -33,9 +33,7 @@ export default async function Home() {
           drive the next dollar of revenue.
         </p>
 
-        <div className="embed-wrap">
-          <SubstackEmbed />
-        </div>
+        <SubscribeForm />
 
         <p className="fine-print">
           Free. New issue most weeks. Unsubscribe anytime.
