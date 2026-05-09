@@ -585,6 +585,29 @@ h1 em {
   font-weight: 700;
 }
 
+.subscribe-cta {
+  display: block;
+  width: 100%;
+  padding: 16px 22px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--accent) 0%, #d99224 100%);
+  color: #1a1408;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.subscribe-cta:hover {
+  filter: brightness(1.08);
+  color: #1a1408;
+}
+
+.subscribe-cta:active {
+  transform: translateY(1px);
+}
+
 .unlocked {
   padding: 20px;
   background: rgba(245, 181, 68, 0.06);

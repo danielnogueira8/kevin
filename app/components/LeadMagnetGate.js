@@ -2,7 +2,8 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import SubscribeForm from "./SubscribeForm";
+
+const SUBSTACK_SUBSCRIBE_URL = "https://kevinkennethlau.substack.com/subscribe";
 
 function isFileDownload(url) {
   return /\.(pdf|zip|docx?|xlsx?|pptx?|csv)(\?|#|$)/i.test(url || "");
@@ -114,27 +115,31 @@ export default function LeadMagnetGate({ resource }) {
             <>
               <p className="resource-desc">
                 Subscribe to The Customer Continuum to unlock the {format}.
-                You'll get the download here and Kevin's confirmation email in
+                You'll get the download here and Kevin's posts straight to
                 your inbox.
               </p>
-              <SubscribeForm
-                buttonLabel={`Get the ${format}`}
-                onSubscribe={handleSubscribe}
-              />
+              <a
+                className="subscribe-cta"
+                href={SUBSTACK_SUBSCRIBE_URL}
+                target="_blank"
+                rel="noreferrer"
+                onClick={handleSubscribe}
+              >
+                Subscribe to Substack to unlock the {format}
+              </a>
               <div className="how-it-works">
                 <p className="how-it-works-title">What happens next</p>
                 <ol className="how-it-works-steps">
                   <li>
                     <span className="step-num">1</span>
                     <span>
-                      Enter your email above — a Substack tab will open in a new
-                      window.
+                      Click the button above — Substack opens in a new tab.
                     </span>
                   </li>
                   <li>
                     <span className="step-num">2</span>
                     <span>
-                      Pick any plan to confirm your subscription. The{" "}
+                      Enter your email and pick any plan. The{" "}
                       <strong>free plan</strong> works — no payment required.
                       <img
                         className="how-it-works-img"
