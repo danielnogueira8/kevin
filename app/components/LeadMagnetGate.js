@@ -1,13 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import SubscribeForm from "./SubscribeForm";
 
-export default function LeadMagnetGate({
-  resource,
-  searchParams,
-}) {
-  const unlocked = searchParams?.unlocked === "1";
-  const hasError = searchParams?.error === "1";
-  const subscribeStatus = searchParams?.status || null;
+function isFileDownload(url) {
+  return /\.(pdf|zip|docx?|xlsx?|pptx?|csv)(\?|#|$)/i.test(url || "");
+}
 
+export default function LeadMagnetGate({ resource }) {
   const {
     slug,
     eyebrow = "Free resource",
@@ -20,6 +21,28 @@ export default function LeadMagnetGate({
     downloadUrl,
     coverEmoji = "📘",
   } = resource;
+
+  const storageKey = `kevinlau:unlocked:${slug}`;
+  const [unlocked, setUnlocked] = useState(false);
+
+  useEffect(() => {
+    try {
+      if (window.localStorage.getItem(storageKey) === "1") {
+        setUnlocked(true);
+      }
+    } catch {
+      // localStorage unavailable; ignore
+    }
+  }, [storageKey]);
+
+  function handleSubscribe() {
+    try {
+      window.localStorage.setItem(storageKey, "1");
+    } catch {
+      // ignore
+    }
+    setUnlocked(true);
+  }
 
   return (
     <main className="page">
@@ -71,19 +94,17 @@ export default function LeadMagnetGate({
 
           {unlocked ? (
             <div className="unlocked">
-              <p className="unlocked-tag">
-                {subscribeStatus === "synced"
-                  ? "✅ You're subscribed."
-                  : "✅ Got it — your resource is ready."}
-              </p>
+              <p className="unlocked-tag">✅ Your resource is ready.</p>
               <a
                 className="download-btn"
                 href={downloadUrl}
-                download
-                target="_blank"
-                rel="noreferrer"
+                {...(isFileDownload(downloadUrl)
+                  ? { download: true, target: "_blank", rel: "noreferrer" }
+                  : {})}
               >
-                Download the {format}
+                {isFileDownload(downloadUrl)
+                  ? `Download the ${format}`
+                  : `Open the ${format}`}
               </a>
               <p className="fine-print">
                 Check your inbox for The Customer Continuum confirmation email.
@@ -91,37 +112,16 @@ export default function LeadMagnetGate({
             </div>
           ) : (
             <>
-              <form
-                className="signup"
-                action="/api/subscribe"
-                method="post"
-              >
-                <input
-                  type="hidden"
-                  name="redirect"
-                  value={`/resources/${slug}`}
-                />
-                <label htmlFor="email" className="visually-hidden">
-                  Work email
-                </label>
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="you@workemail.com"
-                  required
-                />
-                <button type="submit">Get the {format}</button>
-              </form>
-
-              {hasError && (
-                <p className="error">
-                  Could not process your request. Please try again.
-                </p>
-              )}
-
+              <p className="resource-desc">
+                Subscribe to The Customer Continuum to unlock the {format}.
+                You'll get the download here and Kevin's confirmation email in
+                your inbox.
+              </p>
+              <SubscribeForm
+                buttonLabel={`Get the ${format}`}
+                onSubscribe={handleSubscribe}
+              />
               <p className="fine-print">
-                Subscribe to The Customer Continuum and unlock this resource.
                 Free, weekly-ish, unsubscribe anytime.
               </p>
             </>

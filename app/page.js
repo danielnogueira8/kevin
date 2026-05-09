@@ -1,7 +1,6 @@
-export default async function Home({ searchParams }) {
-  const params = await searchParams;
-  const hasError = params?.error === "1";
+import SubscribeForm from "./components/SubscribeForm";
 
+export default function Home() {
   return (
     <main className="page">
       <div className="bg-grid" aria-hidden="true" />
@@ -34,29 +33,10 @@ export default async function Home({ searchParams }) {
           drive the next dollar of revenue.
         </p>
 
-        <form className="signup" action="/api/subscribe" method="post">
-          <label htmlFor="email" className="visually-hidden">
-            Work email
-          </label>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="you@workemail.com"
-            required
-          />
-          <button type="submit">Subscribe</button>
-        </form>
-
-        {hasError && (
-          <p className="error">
-            Could not process your request. Please try again.
-          </p>
-        )}
+        <SubscribeForm />
 
         <p className="fine-print">
-          Free. New issue most weeks. Unsubscribe anytime. You'll be added to
-          Kevin's Substack list once sync completes.
+          Free. New issue most weeks. Unsubscribe anytime.
         </p>
 
         <ul className="proof">

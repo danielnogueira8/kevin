@@ -194,6 +194,7 @@ h1 em {
 
 .signup {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
   max-width: 480px;
   margin: 0 auto;
@@ -202,6 +203,11 @@ h1 em {
   border: 1px solid var(--border);
   border-radius: 12px;
   transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.signup .error {
+  flex-basis: 100%;
+  margin: 0;
 }
 
 .signup:focus-within {
@@ -560,6 +566,48 @@ h1 em {
     max-width: 280px;
     margin: 0 auto;
   }
+}
+
+/* Download placeholder page */
+.placeholder-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  max-width: 480px;
+  margin: 32px auto;
+  padding: 32px 28px;
+  background: var(--surface);
+  border: 1px dashed var(--border-strong);
+  border-radius: 16px;
+}
+
+.placeholder-emoji {
+  margin: 0 0 4px;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.placeholder-title {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.placeholder-meta {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.placeholder-note {
+  margin: 12px 0 0;
+  font-size: 0.88rem;
+  color: var(--text-dim);
+  font-style: italic;
 }
 
 @media (max-width: 600px) {
