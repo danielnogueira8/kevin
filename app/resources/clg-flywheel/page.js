@@ -23,8 +23,10 @@ const resource = {
   pages: 18,
   format: "PDF",
   coverEmoji: "🎯",
-  // Replace with the real asset URL when ready (e.g. /assets/clg-flywheel.pdf or a CDN link)
-  downloadUrl: "/assets/clg-flywheel.pdf",
+  // Placeholder destination until the real PDF is ready. When you have the
+  // asset, either point this at /assets/clg-flywheel.pdf (drop the file in
+  // /public/assets/) or a CDN link.
+  downloadUrl: "/resources/clg-flywheel/download",
 };
 
 export default function Page() {

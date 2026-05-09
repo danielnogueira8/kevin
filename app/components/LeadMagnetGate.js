@@ -4,6 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import SubscribeForm from "./SubscribeForm";
 
+function isFileDownload(url) {
+  return /\.(pdf|zip|docx?|xlsx?|pptx?|csv)(\?|#|$)/i.test(url || "");
+}
+
 export default function LeadMagnetGate({ resource }) {
   const {
     slug,
@@ -94,11 +98,13 @@ export default function LeadMagnetGate({ resource }) {
               <a
                 className="download-btn"
                 href={downloadUrl}
-                download
-                target="_blank"
-                rel="noreferrer"
+                {...(isFileDownload(downloadUrl)
+                  ? { download: true, target: "_blank", rel: "noreferrer" }
+                  : {})}
               >
-                Download the {format}
+                {isFileDownload(downloadUrl)
+                  ? `Download the ${format}`
+                  : `Open the ${format}`}
               </a>
               <p className="fine-print">
                 Check your inbox for The Customer Continuum confirmation email.
