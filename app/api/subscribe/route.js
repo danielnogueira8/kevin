@@ -15,12 +15,13 @@ function safeRedirectPath(value) {
 }
 
 export async function POST(request) {
+  let redirectPath = null;
   try {
     const formData = await request.formData();
     const email = String(formData.get("email") || "")
       .trim()
       .toLowerCase();
-    const redirectPath = safeRedirectPath(formData.get("redirect"));
+    redirectPath = safeRedirectPath(formData.get("redirect"));
     const errorPath = redirectPath || "/";
 
     if (!isValidEmail(email)) {
@@ -31,10 +32,24 @@ export async function POST(request) {
 
     await upsertSubscriberRecord({ email, status: "pending" });
 
-    const result = await syncEmailToSubstack({
-      email,
-      userAgent: request.headers.get("user-agent") || "",
-    });
+    let result;
+    try {
+      result = await syncEmailToSubstack({
+        email,
+        userAgent: request.headers.get("user-agent") || "",
+      });
+    } catch (syncError) {
+      console.error("[subscribe] substack sync threw:", syncError);
+      result = {
+        status: "failed",
+        errorMessage:
+          syncError instanceof Error ? syncError.message : "sync threw",
+      };
+    }
+
+    if (result.status !== "synced") {
+      console.warn("[subscribe] substack sync not synced:", result);
+    }
 
     await upsertSubscriberRecord({
       email,
@@ -51,7 +66,9 @@ export async function POST(request) {
     return NextResponse.redirect(
       new URL(`/thanks?status=${result.status}`, request.url)
     );
-  } catch {
-    return NextResponse.redirect(new URL("/?error=1", request.url));
+  } catch (error) {
+    console.error("[subscribe] route handler error:", error);
+    const errorPath = redirectPath || "/";
+    return NextResponse.redirect(new URL(`${errorPath}?error=1`, request.url));
   }
 }
