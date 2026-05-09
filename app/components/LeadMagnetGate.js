@@ -125,7 +125,7 @@ export default function LeadMagnetGate({ resource }) {
                 rel="noreferrer"
                 onClick={handleSubscribe}
               >
-                Subscribe to Substack to unlock the {format}
+                Subscribe to Substack to unlock the Guide
               </a>
               <div className="how-it-works">
                 <p className="how-it-works-title">What happens next</p>
