@@ -406,11 +406,11 @@ h1 em {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 320px 1fr;
-  gap: 48px;
-  max-width: 880px;
+  grid-template-columns: minmax(360px, 440px) 1fr;
+  gap: 56px;
+  max-width: 1120px;
   margin: 24px auto 80px;
-  padding: 40px;
+  padding: 48px;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -665,6 +665,14 @@ h1 em {
 
 .download-btn:active {
   transform: translateY(1px);
+}
+
+@media (max-width: 960px) {
+  .resource {
+    grid-template-columns: minmax(300px, 380px) 1fr;
+    gap: 40px;
+    padding: 36px;
+  }
 }
 
 @media (max-width: 720px) {
