@@ -54,7 +54,11 @@ export default function LeadMagnetGate({ resource }) {
 
       <header className="nav">
         <Link href="/" className="brand">
-          <span className="brand-mark">KL</span>
+          <img
+            className="brand-mark"
+            src="/assets/kevin-lau.jpeg"
+            alt="Kevin Lau"
+          />
           <span className="brand-name">Kevin Lau</span>
         </Link>
         <a

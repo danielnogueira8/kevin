@@ -8,7 +8,11 @@ export default function Home() {
 
       <header className="nav">
         <div className="brand">
-          <span className="brand-mark">KL</span>
+          <img
+            className="brand-mark"
+            src="/assets/kevin-lau.jpeg"
+            alt="Kevin Lau"
+          />
           <span className="brand-name">Kevin Lau</span>
         </div>
         <a
