@@ -72,6 +72,12 @@ export default function LeadMagnetGate({ resource }) {
       </header>
 
       <section className="resource">
+        <div className="resource-header">
+          <p className="eyebrow">{eyebrow}</p>
+          <h1>{title}</h1>
+          {subtitle && <p className="lede">{subtitle}</p>}
+        </div>
+
         <div
           className={`resource-cover${coverImage ? " resource-cover--image" : ""}`}
         >
@@ -92,10 +98,6 @@ export default function LeadMagnetGate({ resource }) {
         </div>
 
         <div className="resource-content">
-          <p className="eyebrow">{eyebrow}</p>
-          <h1>{title}</h1>
-          {subtitle && <p className="lede">{subtitle}</p>}
-
           {description && <p className="resource-desc">{description}</p>}
 
           {bullets.length > 0 && (
