@@ -120,17 +120,12 @@ a:hover {
 }
 
 .brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: linear-gradient(135deg, var(--accent) 0%, #d99224 100%);
-  color: #1a1408;
-  font-size: 0.78rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
+  object-fit: cover;
+  border: 1px solid var(--border-strong);
 }
 
 .brand-name {
@@ -453,6 +448,35 @@ h1 em {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--accent);
+  position: relative;
+  z-index: 2;
+}
+
+.resource-cover--image {
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  overflow: hidden;
+  justify-content: flex-end;
+}
+
+.resource-cover-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+}
+
+.resource-cover--image .resource-cover-meta {
+  align-self: flex-start;
+  margin: 0 16px 16px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(8, 12, 20, 0.72);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
 .resource-content h1 {

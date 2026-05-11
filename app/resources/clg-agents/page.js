@@ -22,6 +22,8 @@ const resource = {
   ],
   format: "Playbook",
   coverEmoji: "🤖",
+  coverImage: "/assets/clg-agents.png",
+  coverImageAlt: "The 8-Agent CLG Playbook cover",
   downloadUrl:
     "https://www.notion.so/The-8-Agent-CLG-Playbook-A-Claude-Powered-Post-Sale-Revenue-System-35d93aa14ae480f48621e476b54e845e?source=copy_link",
 };
