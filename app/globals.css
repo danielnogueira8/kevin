@@ -621,7 +621,7 @@ h1 em {
 
 .how-it-works-img {
   display: block;
-  margin: 12px 0 4px;
+  margin: 16px auto 4px;
   width: 100%;
   max-width: 520px;
   height: auto;
@@ -646,7 +646,10 @@ h1 em {
 }
 
 .subscribe-cta {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
   width: 100%;
   padding: 16px 22px;
   border-radius: 12px;
@@ -657,6 +660,11 @@ h1 em {
   text-align: center;
   text-decoration: none;
   transition: filter 0.15s ease, transform 0.1s ease;
+}
+
+.subscribe-cta-lock {
+  font-size: 0.95em;
+  line-height: 1;
 }
 
 .subscribe-cta:hover {
