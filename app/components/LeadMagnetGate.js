@@ -21,6 +21,8 @@ export default function LeadMagnetGate({ resource }) {
     format = "PDF",
     downloadUrl,
     coverEmoji = "📘",
+    coverImage,
+    coverImageAlt,
   } = resource;
 
   const storageKey = `kevinlau:unlocked:${slug}`;
@@ -66,8 +68,20 @@ export default function LeadMagnetGate({ resource }) {
       </header>
 
       <section className="resource">
-        <div className="resource-cover" aria-hidden="true">
-          <span className="resource-cover-emoji">{coverEmoji}</span>
+        <div
+          className={`resource-cover${coverImage ? " resource-cover--image" : ""}`}
+        >
+          {coverImage ? (
+            <img
+              className="resource-cover-img"
+              src={coverImage}
+              alt={coverImageAlt || title}
+            />
+          ) : (
+            <span className="resource-cover-emoji" aria-hidden="true">
+              {coverEmoji}
+            </span>
+          )}
           <span className="resource-cover-meta">
             {format} · {pages ? `${pages} pages` : "Free download"}
           </span>
