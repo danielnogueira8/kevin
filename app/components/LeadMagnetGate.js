@@ -162,11 +162,6 @@ export default function LeadMagnetGate({ resource }) {
                     <span>
                       Enter your email and pick any plan. The{" "}
                       <strong>free plan</strong> works — no payment required.
-                      <img
-                        className="how-it-works-img"
-                        src="/assets/tutorial.png"
-                        alt="Substack subscription plan picker — the free 'None' plan on the right works."
-                      />
                     </span>
                   </li>
                   <li>
@@ -177,6 +172,11 @@ export default function LeadMagnetGate({ resource }) {
                     </span>
                   </li>
                 </ol>
+                <img
+                  className="how-it-works-img"
+                  src="/assets/tutorial.png"
+                  alt="Substack subscription plan picker — the free 'None' plan on the right works."
+                />
               </div>
               <p className="fine-print">
                 Free, weekly-ish, unsubscribe anytime.
