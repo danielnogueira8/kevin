@@ -23,7 +23,7 @@ const resource = {
   ],
   format: "Playbook",
   coverEmoji: "🧠",
-  coverImage: "/assets/customer-led-1.png",
+  coverImage: "/assets/customer-led.png",
   coverImageAlt: "The Customer-Led Growth Strategist cover",
   downloadUrl:
     "https://glimmer-farmhouse-441.notion.site/The-Customer-Led-Growth-Strategist-A-Claude-Powered-Post-Sale-Operating-System-35f93aa14ae4806484b7c0fd1cd92804?source=copy_link",
