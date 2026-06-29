@@ -501,6 +501,15 @@ h1 em {
   z-index: 0;
 }
 
+.resource-cover--landscape {
+  aspect-ratio: 3 / 2;
+}
+
+.resource-cover--landscape .resource-cover-img {
+  object-fit: contain;
+  background: #f4f1ea;
+}
+
 .resource-cover--image .resource-cover-meta {
   align-self: flex-start;
   margin: 0 16px 16px;
@@ -733,6 +742,10 @@ h1 em {
   .resource-cover--image {
     aspect-ratio: 4 / 5;
     max-width: 320px;
+  }
+  .resource-cover--landscape {
+    aspect-ratio: 3 / 2;
+    max-width: 360px;
   }
 }
 

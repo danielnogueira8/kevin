@@ -25,6 +25,7 @@ const resource = {
   coverEmoji: "🤖",
   coverImage: "/assets/claude-project-3.png",
   coverImageAlt: "The Customer Continuum Copilot — three modes",
+  coverAspect: "landscape",
   downloadUrl:
     "https://glimmer-farmhouse-441.notion.site/36e93aa14ae480de8a50e3480a2ffa47?source=copy_link",
 };
