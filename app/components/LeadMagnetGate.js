@@ -23,6 +23,7 @@ export default function LeadMagnetGate({ resource }) {
     coverEmoji = "📘",
     coverImage,
     coverImageAlt,
+    coverAspect,
   } = resource;
 
   const storageKey = `kevinlau:unlocked:${slug}`;
@@ -79,7 +80,9 @@ export default function LeadMagnetGate({ resource }) {
         </div>
 
         <div
-          className={`resource-cover${coverImage ? " resource-cover--image" : ""}`}
+          className={`resource-cover${coverImage ? " resource-cover--image" : ""}${
+            coverImage && coverAspect ? ` resource-cover--${coverAspect}` : ""
+          }`}
         >
           {coverImage ? (
             <img
