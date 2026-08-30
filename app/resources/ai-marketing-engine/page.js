@@ -26,6 +26,7 @@ const resource = {
   coverImage: "/assets/ai-marketing-engine.png",
   coverImageAlt:
     "The AI Marketing Engine for B2B Teams — 5 Claude workflows PDF cover",
+  coverAspectRatio: "1685 / 943",
   downloadUrl:
     "https://drive.google.com/file/d/1tmOBQnpsRgLJK8t5bnO_RuKjqeT-Iype/view",
 };

@@ -501,6 +501,12 @@ h1 em {
   z-index: 0;
 }
 
+/* Covers whose art is not 4/5: show the whole image instead of cropping it. */
+.resource-cover-img--contain {
+  object-fit: contain;
+  background: #0e131c;
+}
+
 .resource-cover--image .resource-cover-meta {
   align-self: flex-start;
   margin: 0 16px 16px;
@@ -730,8 +736,10 @@ h1 em {
     max-width: 280px;
     margin: 0 auto;
   }
-  .resource-cover--image {
+  .resource-cover--image:not([style*="aspect-ratio"]) {
     aspect-ratio: 4 / 5;
+  }
+  .resource-cover--image {
     max-width: 320px;
   }
 }
