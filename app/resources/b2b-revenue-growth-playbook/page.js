@@ -23,7 +23,7 @@ const resource = {
   ],
   description:
     "Nothing needs to connect to your CRM. You just run it in Claude.",
-  format: "Agent pack",
+  format: "Playbook",
   coverEmoji: "📈",
   coverImage: "/assets/revenue-growth-playbook-for-claude.jpeg",
   coverImageAlt:
