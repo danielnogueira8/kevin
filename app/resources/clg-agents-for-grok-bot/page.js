@@ -1,15 +1,15 @@
 import LeadMagnetGate from "../../components/LeadMagnetGate";
 
 export const metadata = {
-  title: "Customer-Led Growth Agents for Claude — Kevin Lau",
+  title: "Customer-Led Growth Agents for Grok Bot — Kevin Lau",
   description:
-    "Kevin Lau's entire post-sale agent team, open-sourced. Nine Claude agents that run a full customer marketing department: Champion Scout, At-Risk Flag, Sentiment Cluster, Reference Match, Briefing Prep, CLG Signal Router, Proof Library Orchestrator, Account Intelligence Hub, and Revenue Attribution Engine. Free.",
+    "Kevin Lau's entire post-sale agent team, open-sourced. Nine Grok agents that run a full customer marketing department: Champion Scout, At-Risk Flag, Sentiment Cluster, Reference Match, Briefing Prep, CLG Signal Router, Proof Library Orchestrator, Account Intelligence Hub, and Revenue Attribution Engine. Free.",
 };
 
 const resource = {
-  slug: "clg-agents-for-claude",
+  slug: "clg-agents-for-grok-bot",
   eyebrow: "Free access",
-  title: "Customer-Led Growth Agents for Claude",
+  title: "Customer-Led Growth Agents for Grok Bot",
   subtitle:
     "I open-sourced my entire post-sale agent team. A full customer marketing department. Each agent gets a job, and each one runs it on its own, day and night.",
   bullets: [
@@ -24,12 +24,12 @@ const resource = {
     "Revenue Attribution Engine · ties advocacy, community and education activity back to retention and expansion, in the language finance already uses.",
   ],
   description:
-    "Here's how they chain together: Champion Scout surfaces every account scoring 70+ on PROP, you pick 10, Proof Library Orchestrator captures the outcome and builds the assets, Reference Match puts them in front of the deals that need them, and Revenue Attribution Engine ties the result back to revenue. It never asks a customer for anything without an exact yes. All live and open source. Install it inside Claude and turn it into your post-sale team.",
+    "Here's how they chain together: Champion Scout surfaces every account scoring 70+ on PROP, you pick 10, Proof Library Orchestrator captures the outcome and builds the assets, Reference Match puts them in front of the deals that need them, and Revenue Attribution Engine ties the result back to revenue. It never asks a customer for anything without an exact yes. All live and open source. Install it inside Grok and turn it into your post-sale team.",
   format: "Agent system",
   coverEmoji: "🤖",
   coverImage: "/assets/grok_team.png",
   coverImageAlt:
-    "Customer-Led Growth Agents for Claude — a nine-agent post-sale customer marketing team",
+    "Customer-Led Growth Agents for Grok Bot — a nine-agent post-sale customer marketing team",
   coverAspectRatio: "3200 / 4000",
   downloadUrl:
     "https://glimmer-farmhouse-441.notion.site/3d293aa14ae48094a7eae4a9140cb01c?source=copy_link",
