@@ -28,8 +28,7 @@ const resource = {
   coverVideo: "/assets/kevin_lau_muse_connect.mp4",
   coverImageAlt: "Meta's Muse connected to a full post-sale stack",
   coverAspectRatio: "16 / 9",
-  downloadUrl:
-    "https://glimmer-farmhouse-441.notion.site/Muse-for-Customer-Marketing-7-Jobs-One-per-Pillar-Setup-Guide-3eb93aa14ae48132b10ff4e60d4a6ad8?source=copy_link",
+  downloadUrl: "/resources/muse-customer-marketing-guide",
 };
 
 export default function Page() {
