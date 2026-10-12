@@ -155,7 +155,18 @@ function Block({ block }) {
   }
 }
 
-function Brand({ small = false }) {
+/** Lora italic: the serif Kevin's covers use for the accent words. */
+export function BrandFonts() {
+  return (
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500;1,600&display=swap"
+      precedence="default"
+    />
+  );
+}
+
+export function Brand({ small = false }) {
   return (
     <Link href="/" className={`rp-brand${small ? " rp-brand--small" : ""}`} aria-label="Kevin Lau home">
       {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -202,6 +213,7 @@ export default function ReportPage({ report }) {
 
   return (
     <div className="rp">
+      <BrandFonts />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
 
       <div className="rp-shell">

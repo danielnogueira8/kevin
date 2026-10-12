@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import "../components/report/report.css";
+import { Brand, BrandFonts } from "../components/report/ReportPage";
 import { reports } from "../../lib/reports";
 import { LINKS, SITE_URL } from "../../lib/site";
 
@@ -38,49 +39,50 @@ function ResourceTile({ report }) {
 
 export default function ResourcesPage() {
   return (
-    <main className="page">
-      <div className="bg-grid" aria-hidden="true" />
-      <div className="bg-glow" aria-hidden="true" />
+    <main className="rp">
+      <BrandFonts />
 
-      <header className="nav">
-        <Link href="/" className="brand">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img className="brand-mark" src="/assets/kevin-lau.jpeg" alt="Kevin Lau" />
-          <span className="brand-name">Kevin Lau</span>
-        </Link>
-        <a className="nav-link" href={LINKS.substack} target="_blank" rel="noreferrer">
-          The Customer Continuum →
-        </a>
-      </header>
+      <div className="lib-top">
+        <div className="rp-banner-grid" aria-hidden="true" />
+        <div className="rp-banner-glow" aria-hidden="true" />
+        <header className="lib-nav">
+          <Brand />
+          <a className="lib-nav-link" href={LINKS.substack} target="_blank" rel="noreferrer">
+            The Customer Continuum →
+          </a>
+        </header>
 
-      <section className="lib-hero">
-        <p className="eyebrow">Free library</p>
-        <h1>
-          Free <em>resources</em>
-        </h1>
-        <p className="lede">
-          Setup guides and AI builds for customer marketing and post-sale teams, from 15+ years
-          building post-sale revenue engines.
-        </p>
-      </section>
+        <section className="lib-hero">
+          <p className="lib-eyebrow">Free library</p>
+          <h1>
+            Free <span className="rp-accent">resources</span>
+          </h1>
+          <p className="lib-lede">
+            Setup guides and AI builds for customer marketing and post-sale teams, from 15+ years
+            building post-sale revenue engines.
+          </p>
+        </section>
+      </div>
 
-      <section className="lib-grid">
-        {reports.map((report) => (
-          <ResourceTile key={report.slug} report={report} />
-        ))}
-      </section>
+      <div className="lib-page">
+        <section className="lib-grid">
+          {reports.map((report) => (
+            <ResourceTile key={report.slug} report={report} />
+          ))}
+        </section>
 
-      <footer className="footer">
-        <span>© Kevin Lau</span>
-        <span className="footer-sep">·</span>
-        <a href={LINKS.linkedin} target="_blank" rel="noreferrer">
-          LinkedIn
-        </a>
-        <span className="footer-sep">·</span>
-        <a href={LINKS.substack} target="_blank" rel="noreferrer">
-          Substack
-        </a>
-      </footer>
+        <footer className="footer rp-footer">
+          <span>© Kevin Lau</span>
+          <span className="footer-sep">·</span>
+          <a href={LINKS.linkedin} target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <span className="footer-sep">·</span>
+          <a href={LINKS.substack} target="_blank" rel="noreferrer">
+            Substack
+          </a>
+        </footer>
+      </div>
     </main>
   );
 }
