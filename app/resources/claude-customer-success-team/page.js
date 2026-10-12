@@ -29,7 +29,7 @@ const resource = {
   coverImageAlt:
     "The Claude Customer Success Team — 7 agents, one account brain",
   coverAspectRatio: "1099 / 1431",
-  downloadUrl: "/resources/claude-customer-success-team-guide",
+  downloadUrl: "/guides/claude-customer-success-team",
 };
 
 export default function Page() {

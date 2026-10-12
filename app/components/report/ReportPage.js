@@ -180,7 +180,7 @@ export function Brand({ small = false }) {
 }
 
 export default function ReportPage({ report }) {
-  const path = `/resources/${report.slug}`;
+  const path = `/guides/${report.slug}`;
   const toc = report.sections.map((s) => ({ id: s.id, nav: s.nav }));
 
   const schema = [

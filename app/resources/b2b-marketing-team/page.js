@@ -25,7 +25,7 @@ const resource = {
   coverImage: "/assets/marketing_team.png",
   coverImageAlt:
     "Your B2B Marketing Team in Claude — 5 roles, 5 ready-made instructions install guide cover",
-  downloadUrl: "/resources/b2b-marketing-team-guide",
+  downloadUrl: "/guides/b2b-marketing-team",
 };
 
 export default function Page() {
