@@ -29,8 +29,7 @@ const resource = {
   coverImageAlt:
     "The Claude Customer Success Team — 7 agents, one account brain",
   coverAspectRatio: "1099 / 1431",
-  downloadUrl:
-    "https://glimmer-farmhouse-441.notion.site/The-Claude-Customer-Success-Team-7-Agents-One-Account-Brain-Setup-Guide-3de93aa14ae481b88cc7c8073053afe0?source=copy_link",
+  downloadUrl: "/resources/claude-customer-success-team-guide",
 };
 
 export default function Page() {

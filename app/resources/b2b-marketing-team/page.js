@@ -25,8 +25,7 @@ const resource = {
   coverImage: "/assets/marketing_team.png",
   coverImageAlt:
     "Your B2B Marketing Team in Claude — 5 roles, 5 ready-made instructions install guide cover",
-  downloadUrl:
-    "https://glimmer-farmhouse-441.notion.site/Your-B2B-Marketing-Team-in-Claude-5-Roles-5-Ready-Made-Instructions-3b293aa14ae4804d9674da79f86de9cf?source=copy_link",
+  downloadUrl: "/resources/b2b-marketing-team-guide",
 };
 
 export default function Page() {
