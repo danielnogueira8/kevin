@@ -4,7 +4,7 @@ import ReportPage from "../../components/report/ReportPage";
 import { getReport, reports } from "../../../lib/reports";
 import { SITE_URL } from "../../../lib/site";
 
-// Only the guides in lib/reports live here; every other resource has its own folder.
+// The on-site guides from lib/reports. Landing pages stay under /resources.
 export const dynamicParams = false;
 
 export function generateStaticParams() {
@@ -15,7 +15,7 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const report = getReport(slug);
   if (!report) return {};
-  const url = `${SITE_URL}/resources/${report.slug}`;
+  const url = `${SITE_URL}/guides/${report.slug}`;
   return {
     title: `${report.title} | Kevin Lau`,
     description: report.description,

@@ -28,7 +28,7 @@ const resource = {
   coverVideo: "/assets/kevin_lau_muse_connect.mp4",
   coverImageAlt: "Meta's Muse connected to a full post-sale stack",
   coverAspectRatio: "16 / 9",
-  downloadUrl: "/resources/muse-customer-marketing-guide",
+  downloadUrl: "/guides/muse-customer-marketing",
 };
 
 export default function Page() {
