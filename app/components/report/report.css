@@ -502,13 +502,14 @@ body:has(.rp) {
   display: block;
 }
 
-/* The coral italic serif from Kevin's covers ("one account brain.") */
+/* The italic serif from Kevin's covers ("one account brain."), kept in the
+   headline's navy so every headline reads as one colour. */
 .rp-accent {
   font-family: var(--rp-serif);
   font-style: italic;
   font-weight: 500;
   letter-spacing: -0.01em;
-  color: var(--coral);
+  color: var(--navy);
 }
 
 .rp-intro {
