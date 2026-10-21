@@ -20,8 +20,9 @@ const resource = {
   ],
   format: "Playbook",
   coverEmoji: "🤖",
-  coverImage: "/assets/clg-agents.png",
-  coverImageAlt: "The 8-Agent CLG Playbook cover",
+  coverImage: "/assets/clg_system_week.png",
+  coverImageAlt: "A week with my Claude post-sale revenue system: the 8 agents on a calendar, the files they run on, and a Claude Project",
+  coverAspectRatio: "2160 / 2700",
   downloadUrl: "/guides/8-agent-clg-playbook",
 };
 

@@ -25,10 +25,10 @@ const resource = {
     "Build the city first. Then add traffic. This is the triage Kevin runs before a single agent goes into the CLG Agentic Blueprint, turned into something you can run yourself.",
   format: "Workbook",
   coverEmoji: "📒",
-  coverImage: "/assets/claude_for_cs_leaders.png",
+  coverImage: "/assets/claude_workbook_week.png",
   coverImageAlt:
-    "Claude for CS Leaders: The Workbook — worksheets for deciding which post-sale work should touch AI",
-  coverAspectRatio: "1086 / 1448",
+    "The Claude workbook for CS leaders, in use: a prompt in Claude, the weekly log, the board slide and the 40-minute week",
+  coverAspectRatio: "2160 / 2700",
   downloadUrl: "/guides/claude-for-cs-leaders",
 };
 
