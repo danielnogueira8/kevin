@@ -29,8 +29,7 @@ const resource = {
   coverImageAlt:
     "Claude for CS Leaders: The Workbook — worksheets for deciding which post-sale work should touch AI",
   coverAspectRatio: "1086 / 1448",
-  downloadUrl:
-    "https://glimmer-farmhouse-441.notion.site/Resource-Claude-for-CS-Leaders-The-Workbook-3ce93aa14ae48029916deb2dcaf01dc5?source=copy_link",
+  downloadUrl: "/guides/claude-for-cs-leaders",
 };
 
 export default function Page() {
