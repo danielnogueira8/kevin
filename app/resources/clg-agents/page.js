@@ -20,8 +20,8 @@ const resource = {
   ],
   format: "Playbook",
   coverEmoji: "🤖",
-  coverImage: "/assets/clg_system_week.png",
-  coverImageAlt: "A week with my Claude post-sale revenue system: the 8 agents on a calendar, the files they run on, and a Claude Project",
+  coverImage: "/assets/clg_revenue_system.png",
+  coverImageAlt: "The Claude Revenue System for post-sale B2B SaaS: a Director that runs the week and 7 agents, one per day",
   coverAspectRatio: "2160 / 2700",
   downloadUrl: "/guides/8-agent-clg-playbook",
 };
