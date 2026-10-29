@@ -27,7 +27,7 @@ const resource = {
   coverEmoji: "📙",
   coverImage: "/assets/claude_b2b_marketing_workbook.png",
   coverImageAlt:
-    "The Claude Workbook for B2B marketing leaders: six worksheets feeding one board slide",
+    "The Claude Workbook for B2B marketing leaders: seven worksheets under one workbook",
   coverAspectRatio: "2160 / 2700",
   downloadUrl: "/guides/claude-b2b-marketing-workbook",
 };
