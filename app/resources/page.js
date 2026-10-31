@@ -4,6 +4,7 @@ import "../components/report/report.css";
 import { Brand, BrandFonts } from "../components/report/ReportPage";
 import { reports } from "../../lib/reports";
 import { LINKS, SITE_URL } from "../../lib/site";
+import Disclaimer from "../components/Disclaimer";
 
 export const metadata = {
   title: "Free Resources | Kevin Lau",
@@ -70,6 +71,8 @@ export default function ResourcesPage() {
             <ResourceTile key={report.slug} report={report} />
           ))}
         </section>
+
+        <Disclaimer className="rp-disclaimer" />
 
         <footer className="footer rp-footer">
           <span>© Kevin Lau</span>

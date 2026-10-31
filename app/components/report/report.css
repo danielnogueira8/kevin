@@ -1159,6 +1159,16 @@ body:has(.rp) {
   color: var(--border-strong);
 }
 
+.rp .rp-disclaimer {
+  margin: 40px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.rp .rp-disclaimer + .rp-footer {
+  margin-top: 16px;
+}
+
 /* ---------- /resources library ---------- */
 .lib-top {
   position: relative;

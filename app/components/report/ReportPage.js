@@ -6,6 +6,7 @@ import ReportCode from "./ReportCode";
 import ReportText from "./ReportText";
 import { ReportToc, ReportTocMobile } from "./ReportToc";
 import "./report.css";
+import Disclaimer from "../Disclaimer";
 
 const pad = (n) => String(n).padStart(2, "0");
 
@@ -323,6 +324,7 @@ export default function ReportPage({ report }) {
               <SubscribeForm />
               <p className="fine-print">Free. Unsubscribe anytime.</p>
             </div>
+            <Disclaimer className="rp-disclaimer" />
             <footer className="footer rp-footer">
               <span>© Kevin Lau</span>
               <span className="footer-sep">·</span>

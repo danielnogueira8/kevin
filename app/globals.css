@@ -100,6 +100,7 @@ a:hover {
 .hero,
 .topics,
 .bio,
+.site-disclaimer,
 .footer {
   position: relative;
   z-index: 1;
@@ -399,6 +400,15 @@ h1 em {
 
 .footer-sep {
   color: var(--border-strong);
+}
+
+.site-disclaimer {
+  max-width: 640px;
+  margin: 0 auto 16px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  text-align: center;
+  color: var(--text-dim);
 }
 
 /* Lead-magnet gate */

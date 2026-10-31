@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Disclaimer from "./Disclaimer";
 
 const SUBSTACK_SUBSCRIBE_URL = "https://kevinkennethlau.substack.com/subscribe";
 
@@ -208,6 +209,8 @@ export default function LeadMagnetGate({ resource }) {
           )}
         </div>
       </section>
+
+      <Disclaimer />
 
       <footer className="footer">
         <span>© Kevin Lau</span>
