@@ -1,4 +1,5 @@
 import SubscribeForm from "./components/SubscribeForm";
+import Disclaimer from "./components/Disclaimer";
 
 export default function Home() {
   return (
@@ -100,6 +101,8 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      <Disclaimer />
 
       <footer className="footer">
         <span>© Kevin Lau</span>

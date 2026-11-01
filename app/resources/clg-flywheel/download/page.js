@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Disclaimer from "../../../components/Disclaimer";
 
 export const metadata = {
   title: "Your download — The AI-Powered CLG Flywheel",
@@ -76,6 +77,8 @@ export default function DownloadPage() {
           <Link href="/">← Back to homepage</Link>
         </p>
       </section>
+
+      <Disclaimer />
 
       <footer className="footer">
         <span>© Kevin Lau</span>
