@@ -22,7 +22,7 @@ const resource = {
     "Revenue Analyst: one-page weekly renewal report, shared behind a private link",
   ],
   description:
-    "The Head of Customer Success starts the day with a brief on who needs you, holds the decision queue, and closes the day with a handoff so nothing gets lost. Nothing reaches a customer without you approving it, and that's a rule the agents can't override. Each agent has one job, and none of them start from zero, because they all read the same account brain. Instead of writing random prompts, you drop one folder into Claude, fill in your accounts once, and it remembers tomorrow what you told it today. I've spent 15+ years in post-sale, and took net dollar retention from 95% to 108% across 50,000+ accounts. The thing that changes how a CS team works is shared memory, not a better prompt.",
+    "The Head of Customer Success starts the day with a brief on who needs you, holds the decision queue, and closes the day with a handoff so nothing gets lost. Nothing reaches a customer without you approving it, and that's a rule the agents can't override. Each agent has one job, and none of them start from zero, because they all read the same account brain. Instead of writing random prompts, you drop one folder into Claude, fill in your accounts once, and it remembers tomorrow what you told it today. I've spent 16+ years in post-sale, and built 500+ customer proof points a year. The thing that changes how a CS team works is shared memory, not a better prompt.",
   format: "Agent team",
   coverEmoji: "🤝",
   coverImage: "/assets/claude_agents.png",

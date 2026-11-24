@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free video course",
   title: "Claude Cowork for Customer Marketers",
   subtitle:
-    "After 15+ years in Customer-Led Growth and hundreds of conversations with customer marketing teams, here's what I keep seeing: most customer marketers use AI. Very few know how to use AI to actually run the work — automate reporting, pull from their own tools, and prove their value faster. This free video course fixes that. It's for customer marketers, CS and post-sale teams, lifecycle marketers, founders, and anyone who wants to become an AI-First operator.",
+    "After 16+ years in Customer-Led Growth and hundreds of conversations with customer marketing teams, here's what I keep seeing: most customer marketers use AI. Very few know how to use AI to actually run the work — automate reporting, pull from their own tools, and prove their value faster. This free video course fixes that. It's for customer marketers, CS and post-sale teams, lifecycle marketers, founders, and anyone who wants to become an AI-First operator.",
   bullets: [
     "Set up Claude Cowork from scratch",
     "Connect Cowork to your files, folders, and apps",

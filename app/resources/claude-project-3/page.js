@@ -3,7 +3,7 @@ import LeadMagnetGate from "../../components/LeadMagnetGate";
 export const metadata = {
   title: "The Customer Continuum Copilot — Kevin Lau",
   description:
-    "Fifteen years of customer marketing practice — Marketo, Adobe, F5, Freshworks — packaged into a free Claude Project kit. Three modes: Career Coach, CLG Strategist, Content Writer. Drops in as a Project or loads as a skill in three minutes.",
+    "16+ years of customer marketing practice — Marketo, Adobe, F5, Freshworks — packaged into a free Claude Project kit. Three modes: Career Coach, CLG Strategist, Content Writer. Drops in as a Project or loads as a skill in three minutes.",
 };
 
 const resource = {
@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free Claude Project",
   title: "The Customer Continuum Copilot",
   subtitle:
-    "I packaged fifteen years of customer marketing practice into a free Claude Project kit. Built from the patterns I kept seeing at Marketo, Adobe, F5, and Freshworks — the arguments that got leaders promoted, the ones that didn't, and the customer programs that actually changed the revenue conversation. Distilled into three modes you can run on demand.",
+    "I packaged 16+ years of customer marketing practice into a free Claude Project kit. Built from the patterns I kept seeing at Marketo, Adobe, F5, and Freshworks — the arguments that got leaders promoted, the ones that didn't, and the customer programs that actually changed the revenue conversation. Distilled into three modes you can run on demand.",
   bullets: [
     "Career Coach mode — promotion case structure, four named career patterns, the four-stakeholder map, and the script that turns the QBR from defense to offense",
     "CLG Strategist mode — the seven pillars, the lifecycle engine, four output shapes (framework, playbook, measurement plan, 30-60-90 roadmap), and the handoffs to Sales, CS, Product, and PMM",

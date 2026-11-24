@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free copilot",
   title: "The AI Customer Marketing Team",
   subtitle:
-    "I built an AI customer marketing team using Claude — nine specialist agents on the exact seven-pillar Customer-Led Growth system I've run for 15 years at Marketo, Adobe, and Freshworks. A senior CM hire runs $150K-$250K a year and an agency runs $5K-$15K a month — most teams need the system, not another headcount they can't justify. This gives you the system, for free.",
+    "I built an AI customer marketing team using Claude — nine specialist agents on the exact seven-pillar Customer-Led Growth system I've run for 16+ years at Marketo, Adobe, and Freshworks. A senior CM hire runs $150K-$250K a year and an agency runs $5K-$15K a month — most teams need the system, not another headcount they can't justify. This gives you the system, for free.",
   bullets: [
     "Adoption Signal Watcher — flags adoption gaps months before the renewal forecast",
     "At-Risk Detector — combines weak signals into one churn-risk score and triggers an early save",

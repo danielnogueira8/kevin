@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free agent system",
   title: "The Post-Sale AI Agents System",
   subtitle:
-    "Claude just released Fable 5 and it's about to change post-sale work forever. A year ago I didn't know how to use a terminal — 15 years in customer marketing, zero code ever written. Today AI agents handle the work I used to lose entire days to, and Fable 5 is the first model I've used that can run it from start to finish. If your team of 3 is doing the work of 10, this is the way out. No engineering team, no complex setup — just a laptop, a Claude subscription, and about an hour to get started.",
+    "Claude just released Fable 5 and it's about to change post-sale work forever. A year ago I didn't know how to use a terminal — 16+ years in customer marketing, zero code ever written. Today AI agents handle the work I used to lose entire days to, and Fable 5 is the first model I've used that can run it from start to finish. If your team of 3 is doing the work of 10, this is the way out. No engineering team, no complex setup — just a laptop, a Claude subscription, and about an hour to get started.",
   bullets: [
     "QBR-ready account stories in minutes, not days",
     "Accounts scored for advocacy and expansion readiness",

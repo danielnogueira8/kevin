@@ -95,7 +95,7 @@ export default function Home() {
           <p className="eyebrow">About</p>
           <h2>Written by Kevin Kenneth Lau</h2>
           <p>
-            Customer marketing and advocacy leader at Freshworks. 15+ years
+            Customer marketing and advocacy leader at Freshworks. 16+ years
             building post-sale growth engines at companies most teams want to
             copy. The Customer Continuum is where I unpack what actually works.
           </p>
