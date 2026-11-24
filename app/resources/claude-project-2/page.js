@@ -3,7 +3,7 @@ import LeadMagnetGate from "../../components/LeadMagnetGate";
 export const metadata = {
   title: "Claude Project for CLG — Kevin Lau",
   description:
-    "Fifteen years of customer marketing practice — Marketo, Adobe, F5, Freshworks — packaged into a free Claude Project kit. One Project, three modes, seven pillars. Drops in as knowledge or loads as a skill in three minutes.",
+    "16+ years of customer marketing practice — Marketo, Adobe, F5, Freshworks — packaged into a free Claude Project kit. One Project, three modes, seven pillars. Drops in as knowledge or loads as a skill in three minutes.",
 };
 
 const resource = {
@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free Claude Project",
   title: "Claude Project for CLG",
   subtitle:
-    "Seven pillars. Three modes. One Project. I packaged fifteen years of customer marketing practice — the patterns I kept seeing at Marketo, Adobe, F5, and Freshworks — into a free Claude Project kit. The promotion cases that worked, the customer programs that changed the revenue conversation, and the writing rules that keep AI tells off the page. All routed through a single SKILL.md.",
+    "Seven pillars. Three modes. One Project. I packaged 16+ years of customer marketing practice — the patterns I kept seeing at Marketo, Adobe, F5, and Freshworks — into a free Claude Project kit. The promotion cases that worked, the customer programs that changed the revenue conversation, and the writing rules that keep AI tells off the page. All routed through a single SKILL.md.",
   bullets: [
     "SKILL.md — the master file that routes the three modes",
     "career-coach.md — promotion case structure, stakeholder map, VP path",

@@ -28,7 +28,7 @@ const resource = {
     "Community economics and the retention case.",
   ],
   description:
-    "Each one outputs the play, the number it moves, how that number is defined, the data it pulls from by name, what has to be tracked before the quarter starts instead of after, and where the claim breaks under a follow-up question. Because a program that drove $21.1M and can't survive that question didn't prove anything. It bought you one quarter.",
+    "Each one outputs the play, the number it moves, how that number is defined, the data it pulls from by name, what has to be tracked before the quarter starts instead of after, and where the claim breaks under a follow-up question. Because a program that claims a big influenced number and can't survive that question didn't prove anything. It bought you one quarter.",
   format: "Skill pack",
   coverEmoji: "📊",
   coverImage: "/assets/b2b-revenue-claude-skills.png",

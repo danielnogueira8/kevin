@@ -11,10 +11,10 @@ const resource = {
   eyebrow: "Free guide",
   title: "The Ultimate Claude Guide for B2B Revenue Teams",
   subtitle:
-    "Everyone in B2B uses Claude now. Most of us are still using it to reword emails, one person, one prompt, one tab, nothing compounds. I spent the last year building my entire post-sale system inside Claude: 135 agents across seven pillars, a copilot trained on 15 years of my work, an app I shipped in a weekend as a non-technical marketer. This is the guide I wish I'd had. Written for anyone who owns revenue, not just customer marketers. If you're responsible for pipeline, retention, or expansion, it's for you.",
+    "Everyone in B2B uses Claude now. Most of us are still using it to reword emails, one person, one prompt, one tab, nothing compounds. I spent the last year building my entire post-sale system inside Claude: 135 agents across seven pillars, a copilot trained on 16+ years of my work, an app I shipped in a weekend as a non-technical marketer. This is the guide I wish I'd had. Written for anyone who owns revenue, not just customer marketers. If you're responsible for pipeline, retention, or expansion, it's for you.",
   bullets: [
     "The setup that makes Claude actually know your business, so you stop re-explaining your ICP, your metrics, and your standards in every single chat",
-    "How to turn your customer base into your cheapest source of pipeline: the advocacy system behind $50M+ in influenced pipeline and a 40% lift in win rates",
+    "How to turn your customer base into your cheapest source of pipeline: the advocacy system behind 500+ customer proof points and 500+ acts of advocacy a year",
     "How to turn scattered revenue data into decisions: which accounts are about to expand, which are about to leave, and what each one is worth in NRR",
     "How to move your team from single-player to multi-player: shared agents running parts of the system, and how to scale that across the org without leadership pulling the plug",
   ],

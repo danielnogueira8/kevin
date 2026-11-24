@@ -59,7 +59,7 @@ export default function ResourcesPage() {
             Free <span className="rp-accent">resources</span>
           </h1>
           <p className="lib-lede">
-            Setup guides and AI builds for customer marketing and post-sale teams, from 15+ years
+            Setup guides and AI builds for customer marketing and post-sale teams, from 16+ years
             building post-sale revenue engines.
           </p>
         </section>

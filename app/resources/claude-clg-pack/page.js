@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free Claude pack",
   title: "The Claude CLG Pack",
   subtitle:
-    "5 free tools I run inside my own post-sale team. Same architecture I've refined for 15 years across Marketo, Adobe, F5, and Freshworks — the playbook underneath it took NDR from 95% to 108% across 50,000+ accounts. A system you install once, teach your seven pillars, and use over and over.",
+    "5 free tools I run inside my own post-sale team. Same architecture I've refined for 16+ years across Marketo, Adobe, F5, and Freshworks — the playbook underneath it is the one I used to grow the Freshworks community to 50,000 members. A system you install once, teach your seven pillars, and use over and over.",
   bullets: [
     "The CLG Strategist — a senior Customer-Led Growth advisor inside your own Claude account. Scores your function across the seven pillars in 60 seconds, names the one to fix first, and builds your 90-day plan.",
     "The 15-Agent Library — one agent, one job, across retention, advocacy, community, voice of customer, and exec engagement. Each with the signals it reads, when it fires, and a copy-paste prompt.",

@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free playbook",
   title: "The Customer-Led Growth Strategist",
   subtitle:
-    "R.I.P. customer marketing as a support function. This Customer-Led Growth strategist replaces it — a senior CLG operator that runs inside your own Claude account in 10 minutes. Modeled on the Freshworks rebuild that scaled the community to 50,000+ members, with 96.1% of last quarter's questions answered by other customers and community-active customers retaining 3–4x longer.",
+    "R.I.P. customer marketing as a support function. This Customer-Led Growth strategist replaces it — a senior CLG operator that runs inside your own Claude account in 10 minutes. Modeled on the Freshworks rebuild that grew the community to 50,000 members.",
   bullets: [
     "The exact system prompt behind the strategist",
     "A 7-pillar diagnostic that scores your post-sale function in 60 seconds",

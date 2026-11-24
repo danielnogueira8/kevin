@@ -11,7 +11,7 @@ const resource = {
   eyebrow: "Free playbook",
   title: "The Customer-Led Growth Strategist",
   subtitle:
-    "A world-class CLG strategist built inside Claude — the same architecture I've refined for 15 years across Marketo, Adobe, F5, and Freshworks. The playbook underneath it took NDR from 95% to 108% across 50,000+ accounts, and is now scaling the Freshworks community to 50,000+ members with 96.1% of last quarter's questions answered by other customers.",
+    "A world-class CLG strategist built inside Claude — the same architecture I've refined for 16+ years across Marketo, Adobe, F5, and Freshworks. The playbook underneath it is the one I used to grow the Freshworks community to 50,000 members.",
   bullets: [
     "The exact system prompt behind the strategist",
     "A 7-pillar diagnostic that scores your post-sale function in 60 seconds",
